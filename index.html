@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Noto Sans SC', sans-serif; background-color: #FFF9F5; }
+        body { font-family: 'Noto Sans SC', sans-serif; background-color: #FFF9F5; scroll-behavior: smooth; }
         .kawaii-font { font-family: 'ZCOOL KuaiLe', cursive; }
         .gradient-dopamine { background: linear-gradient(120deg, #FFDEE9 0%, #B5FFFC 100%); }
         .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
@@ -70,40 +70,40 @@
         <h2 class="text-3xl font-bold text-center mb-16 kawaii-font text-pink-400">—— 灵感分区 ——</h2>
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6">
             <!-- Notebooks -->
-            <div class="text-center card-hover">
+            <a href="#notebooks" class="text-center card-hover">
                 <div class="bg-pink-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">📓</div>
                 <p class="font-bold">本子</p>
-            </div>
+            </a>
             <!-- Pens -->
-            <div class="text-center card-hover">
+            <a href="#writing" class="text-center card-hover">
                 <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">✍️</div>
                 <p class="font-bold">笔</p>
-            </div>
+            </a>
             <!-- Rulers -->
-            <div class="text-center card-hover">
+            <a href="#tools" class="text-center card-hover">
                 <div class="bg-yellow-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">📏</div>
                 <p class="font-bold">尺子</p>
-            </div>
+            </a>
             <!-- Erasers -->
-            <div class="text-center card-hover">
+            <a href="#tools" class="text-center card-hover">
                 <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">🧼</div>
                 <p class="font-bold">橡皮</p>
-            </div>
+            </a>
             <!-- Sharpeners -->
-            <div class="text-center card-hover">
+            <a href="#tools" class="text-center card-hover">
                 <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">⚙️</div>
                 <p class="font-bold">卷笔刀</p>
-            </div>
+            </a>
             <!-- Dot Glue -->
-            <div class="text-center card-hover">
+            <a href="#tools" class="text-center card-hover">
                 <div class="bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">🍯</div>
                 <p class="font-bold">点点胶</p>
-            </div>
+            </a>
             <!-- Correction Tape -->
-            <div class="text-center card-hover">
+            <a href="#tools" class="text-center card-hover">
                 <div class="bg-teal-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">🏷️</div>
                 <p class="font-bold">涂改带</p>
-            </div>
+            </a>
         </div>
     </section>
 
@@ -111,71 +111,90 @@
     <section class="bg-white py-20">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold mb-12 kawaii-font text-center">💖 必带回家的心动单品</h2>
-            <div class="grid md:grid-cols-3 gap-10">
-                <!-- Product 1 -->
-                <div class="bg-gray-50 rounded-2xl p-6 shadow-sm card-hover border border-pink-50">
-                    <img src="https://sc01.alicdn.com/kf/Hd3780925ef3f40b2b2bcbe5dbb1e08d88.jpg" alt="Notebook" class="rounded-xl mb-4 w-full h-64 object-cover">
-                    <span class="bg-pink-400 text-white px-3 py-1 rounded-full text-xs mb-2 inline-block">人气爆款</span>
-                    <h3 class="text-xl font-bold mb-2">流沙闪粉精装手帐本</h3>
-                    <p class="text-gray-500 text-sm mb-4">亮晶晶流沙封面，内页纸张厚实，书写极具治愈感。</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-2xl font-bold text-pink-500">¥29.9</span>
-                        <button onclick="addToCart('流沙闪粉精装手帐本', 29.9, 'https://sc01.alicdn.com/kf/Hd3780925ef3f40b2b2bcbe5dbb1e08d88.jpg')" class="bg-gray-800 text-white px-4 py-2 rounded-lg text-sm hover:bg-gray-700">加入购物车</button>
+            
+            <!-- Notebooks Section -->
+            <div id="notebooks" class="mb-20 scroll-mt-24">
+                <h3 class="text-2xl font-bold mb-8 border-l-4 border-pink-400 pl-4">📓 灵感本子系列</h3>
+                <div class="grid md:grid-cols-3 gap-10">
+                    <!-- Product 1 -->
+                    <div class="bg-gray-50 rounded-2xl p-6 shadow-sm card-hover border border-pink-50">
+                        <img src="https://sc01.alicdn.com/kf/Hd3780925ef3f40b2b2bcbe5dbb1e08d88.jpg" alt="Notebook" class="rounded-xl mb-4 w-full h-64 object-cover">
+                        <span class="bg-pink-400 text-white px-3 py-1 rounded-full text-xs mb-2 inline-block">人气爆款</span>
+                        <h3 class="text-xl font-bold mb-2">流沙闪粉精装手帐本</h3>
+                        <p class="text-gray-500 text-sm mb-4">亮晶晶流沙封面，内页纸张厚实，书写极具治愈感。</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-pink-500">¥29.9</span>
+                            <button onclick="addToCart('流沙闪粉精装手帐本', 29.9, 'https://sc01.alicdn.com/kf/Hd3780925ef3f40b2b2bcbe5dbb1e08d88.jpg')" class="bg-gray-800 text-white px-4 py-2 rounded-lg text-sm hover:bg-gray-700">加入购物车</button>
+                        </div>
                     </div>
                 </div>
-                <!-- Product 2 -->
-                <div class="bg-gray-50 rounded-2xl p-6 shadow-sm card-hover border border-pink-50">
-                    <img src="https://sc01.alicdn.com/kf/H5bb8d3bd144040ac98a6ea33b02ff8e1x.png" alt="Pen" class="rounded-xl mb-4 w-full h-64 object-cover">
-                    <span class="bg-blue-400 text-white px-3 py-1 rounded-full text-xs mb-2 inline-block">多色合一</span>
-                    <h3 class="text-xl font-bold mb-2">10色一体蝴蝶圆珠笔</h3>
-                    <p class="text-gray-500 text-sm mb-4">绝美蝴蝶装饰，10种颜色随心切换，笔记记录神器。</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-2xl font-bold text-pink-500">¥15.5</span>
-                        <button onclick="addToCart('10色一体蝴蝶圆珠笔', 15.5, 'https://sc01.alicdn.com/kf/H5bb8d3bd144040ac98a6ea33b02ff8e1x.png')" class="bg-gray-800 text-white px-4 py-2 rounded-lg text-sm hover:bg-gray-700">加入购物车</button>
+            </div>
+
+            <!-- Writing Section -->
+            <div id="writing" class="mb-20 scroll-mt-24">
+                <h3 class="text-2xl font-bold mb-8 border-l-4 border-blue-400 pl-4">✍️ 书写工具系列</h3>
+                <div class="grid md:grid-cols-3 gap-10">
+                    <!-- Product 2 -->
+                    <div class="bg-gray-50 rounded-2xl p-6 shadow-sm card-hover border border-pink-50">
+                        <img src="https://sc01.alicdn.com/kf/H5bb8d3bd144040ac98a6ea33b02ff8e1x.png" alt="Pen" class="rounded-xl mb-4 w-full h-64 object-cover">
+                        <span class="bg-blue-400 text-white px-3 py-1 rounded-full text-xs mb-2 inline-block">多色合一</span>
+                        <h3 class="text-xl font-bold mb-2">10色一体蝴蝶圆珠笔</h3>
+                        <p class="text-gray-500 text-sm mb-4">绝美蝴蝶装饰，10种颜色随心切换，笔记记录神器。</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-pink-500">¥15.5</span>
+                            <button onclick="addToCart('10色一体蝴蝶圆珠笔', 15.5, 'https://sc01.alicdn.com/kf/H5bb8d3bd144040ac98a6ea33b02ff8e1x.png')" class="bg-gray-800 text-white px-4 py-2 rounded-lg text-sm hover:bg-gray-700">加入购物车</button>
+                        </div>
                     </div>
                 </div>
-                <!-- Product 3 -->
-                <div class="bg-gray-50 rounded-2xl p-6 shadow-sm card-hover border border-pink-50">
-                    <img src="https://sc01.alicdn.com/kf/H1c7a32b7f1564bf8a0759dc4060c312cg.jpg" alt="Correction Tape" class="rounded-xl mb-4 w-full h-64 object-cover">
-                    <span class="bg-orange-400 text-white px-3 py-1 rounded-full text-xs mb-2 inline-block">猫爪限定</span>
-                    <h3 class="text-xl font-bold mb-2">萌系猫爪涂改带/点点胶</h3>
-                    <p class="text-gray-500 text-sm mb-4">超萌猫爪造型，双头设计，修正与粘贴一机搞定。</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-2xl font-bold text-pink-500">¥9.9</span>
-                        <button onclick="addToCart('萌系猫爪涂改带/点点胶', 9.9, 'https://sc01.alicdn.com/kf/H1c7a32b7f1564bf8a0759dc4060c312cg.jpg')" class="bg-gray-800 text-white px-4 py-2 rounded-lg text-sm hover:bg-gray-700">加入购物车</button>
+            </div>
+
+            <!-- Tools Section -->
+            <div id="tools" class="scroll-mt-24">
+                <h3 class="text-2xl font-bold mb-8 border-l-4 border-orange-400 pl-4">🛠️ 手工神器系列</h3>
+                <div class="grid md:grid-cols-3 gap-10">
+                    <!-- Product 3 -->
+                    <div class="bg-gray-50 rounded-2xl p-6 shadow-sm card-hover border border-pink-50">
+                        <img src="https://sc01.alicdn.com/kf/H1c7a32b7f1564bf8a0759dc4060c312cg.jpg" alt="Correction Tape" class="rounded-xl mb-4 w-full h-64 object-cover">
+                        <span class="bg-orange-400 text-white px-3 py-1 rounded-full text-xs mb-2 inline-block">猫爪限定</span>
+                        <h3 class="text-xl font-bold mb-2">萌系猫爪涂改带/点点胶</h3>
+                        <p class="text-gray-500 text-sm mb-4">超萌猫爪造型，双头设计，修正与粘贴一机搞定。</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-pink-500">¥9.9</span>
+                            <button onclick="addToCart('萌系猫爪涂改带/点点胶', 9.9, 'https://sc01.alicdn.com/kf/H1c7a32b7f1564bf8a0759dc4060c312cg.jpg')" class="bg-gray-800 text-white px-4 py-2 rounded-lg text-sm hover:bg-gray-700">加入购物车</button>
+                        </div>
                     </div>
-                </div>
-                <!-- Product 4 -->
-                <div class="bg-gray-50 rounded-2xl p-6 shadow-sm card-hover border border-pink-50">
-                    <img src="https://sc01.alicdn.com/kf/H9592213cec6b404c9d39431c2ac1aa47i.jpg" alt="Eraser" class="rounded-xl mb-4 w-full h-64 object-cover">
-                    <span class="bg-purple-400 text-white px-3 py-1 rounded-full text-xs mb-2 inline-block">樱花物语</span>
-                    <h3 class="text-xl font-bold mb-2">樱花祭系列推拉橡皮</h3>
-                    <p class="text-gray-500 text-sm mb-4">推拉设计干净卫生，可爱樱花配色，屑少不伤纸。</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-2xl font-bold text-pink-500">¥8.8</span>
-                        <button onclick="addToCart('樱花祭系列推拉橡皮', 8.8, 'https://sc01.alicdn.com/kf/H9592213cec6b404c9d39431c2ac1aa47i.jpg')" class="bg-gray-800 text-white px-4 py-2 rounded-lg text-sm hover:bg-gray-700">加入购物车</button>
+                    <!-- Product 4 -->
+                    <div class="bg-gray-50 rounded-2xl p-6 shadow-sm card-hover border border-pink-50">
+                        <img src="https://sc01.alicdn.com/kf/H9592213cec6b404c9d39431c2ac1aa47i.jpg" alt="Eraser" class="rounded-xl mb-4 w-full h-64 object-cover">
+                        <span class="bg-purple-400 text-white px-3 py-1 rounded-full text-xs mb-2 inline-block">樱花物语</span>
+                        <h3 class="text-xl font-bold mb-2">樱花祭系列推拉橡皮</h3>
+                        <p class="text-gray-500 text-sm mb-4">推拉设计干净卫生，可爱樱花配色，屑少不伤纸。</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-pink-500">¥8.8</span>
+                            <button onclick="addToCart('樱花祭系列推拉橡皮', 8.8, 'https://sc01.alicdn.com/kf/H9592213cec6b404c9d39431c2ac1aa47i.jpg')" class="bg-gray-800 text-white px-4 py-2 rounded-lg text-sm hover:bg-gray-700">加入购物车</button>
+                        </div>
                     </div>
-                </div>
-                <!-- Product 5 -->
-                <div class="bg-gray-50 rounded-2xl p-6 shadow-sm card-hover border border-pink-50">
-                    <img src="https://sc01.alicdn.com/kf/He6c1cddba3794bdca2f06037afc49d5a1.jpg" alt="Cutter" class="rounded-xl mb-4 w-full h-64 object-cover">
-                    <span class="bg-green-400 text-white px-3 py-1 rounded-full text-xs mb-2 inline-block">萌趣手工</span>
-                    <h3 class="text-xl font-bold mb-2">萌趣动物公仔裁纸刀</h3>
-                    <p class="text-gray-500 text-sm mb-4">可可爱爱的小动物公仔，隐藏刀头设计，安全又治愈。</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-2xl font-bold text-pink-500">¥12.5</span>
-                        <button onclick="addToCart('萌趣动物公仔裁纸刀', 12.5, 'https://sc01.alicdn.com/kf/He6c1cddba3794bdca2f06037afc49d5a1.jpg')" class="bg-gray-800 text-white px-4 py-2 rounded-lg text-sm hover:bg-gray-700">加入购物车</button>
+                    <!-- Product 5 -->
+                    <div class="bg-gray-50 rounded-2xl p-6 shadow-sm card-hover border border-pink-50">
+                        <img src="https://sc01.alicdn.com/kf/He6c1cddba3794bdca2f06037afc49d5a1.jpg" alt="Cutter" class="rounded-xl mb-4 w-full h-64 object-cover">
+                        <span class="bg-green-400 text-white px-3 py-1 rounded-full text-xs mb-2 inline-block">萌趣手工</span>
+                        <h3 class="text-xl font-bold mb-2">萌趣动物公仔裁纸刀</h3>
+                        <p class="text-gray-500 text-sm mb-4">可可爱爱的小动物公仔，隐藏刀头设计，安全又治愈。</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-pink-500">¥12.5</span>
+                            <button onclick="addToCart('萌趣动物公仔裁纸刀', 12.5, 'https://sc01.alicdn.com/kf/He6c1cddba3794bdca2f06037afc49d5a1.jpg')" class="bg-gray-800 text-white px-4 py-2 rounded-lg text-sm hover:bg-gray-700">加入购物车</button>
+                        </div>
                     </div>
-                </div>
-                <!-- Product 6 -->
-                <div class="bg-gray-50 rounded-2xl p-6 shadow-sm card-hover border border-pink-50">
-                    <img src="https://sc01.alicdn.com/kf/H9196bfada10f4ce9a9544c7f1c0bc084V.jpg" alt="Sharpener" class="rounded-xl mb-4 w-full h-64 object-cover">
-                    <span class="bg-teal-400 text-white px-3 py-1 rounded-full text-xs mb-2 inline-block">学习好物</span>
-                    <h3 class="text-xl font-bold mb-2">立体可爱动物卷笔刀</h3>
-                    <p class="text-gray-500 text-sm mb-4">手动旋转省力方便，透明碎屑槽，文具盒里的亮点。</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-2xl font-bold text-pink-500">¥15.0</span>
-                        <button onclick="addToCart('立体可爱动物卷笔刀', 15.0, 'https://sc01.alicdn.com/kf/H9196bfada10f4ce9a9544c7f1c0bc084V.jpg')" class="bg-gray-800 text-white px-4 py-2 rounded-lg text-sm hover:bg-gray-700">加入购物车</button>
+                    <!-- Product 6 -->
+                    <div class="bg-gray-50 rounded-2xl p-6 shadow-sm card-hover border border-pink-50">
+                        <img src="https://sc01.alicdn.com/kf/H9196bfada10f4ce9a9544c7f1c0bc084V.jpg" alt="Sharpener" class="rounded-xl mb-4 w-full h-64 object-cover">
+                        <span class="bg-teal-400 text-white px-3 py-1 rounded-full text-xs mb-2 inline-block">学习好物</span>
+                        <h3 class="text-xl font-bold mb-2">立体可爱动物卷笔刀</h3>
+                        <p class="text-gray-500 text-sm mb-4">手动旋转省力方便，透明碎屑槽，文具盒里的亮点。</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-pink-500">¥15.0</span>
+                            <button onclick="addToCart('立体可爱动物卷笔刀', 15.0, 'https://sc01.alicdn.com/kf/H9196bfada10f4ce9a9544c7f1c0bc084V.jpg')" class="bg-gray-800 text-white px-4 py-2 rounded-lg text-sm hover:bg-gray-700">加入购物车</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -183,7 +202,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-pink-50 py-12 border-t border-pink-100">
+    <footer id="about" class="bg-pink-50 py-12 border-t border-pink-100">
         <div class="container mx-auto px-6 text-center">
             <div class="text-2xl font-bold text-pink-400 kawaii-font mb-6">🎀 优佳文具</div>
             <p class="text-gray-500 mb-8">做最有温度的文创品牌，陪你记录每一个发光的瞬间。</p>
@@ -212,7 +231,45 @@
                     <span>总计：</span>
                     <span id="cart-total" class="text-pink-500">¥0.00</span>
                 </div>
-                <button onclick="checkout()" class="w-full bg-pink-500 text-white py-4 rounded-xl text-lg font-bold shadow-lg hover:bg-pink-600 transition">去结算 ✨</button>
+                <button onclick="showPaymentModal()" class="w-full bg-pink-500 text-white py-4 rounded-xl text-lg font-bold shadow-lg hover:bg-pink-600 transition">去结算 ✨</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div id="payment-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[200] flex items-center justify-center hidden opacity-0 transition-opacity duration-300">
+        <div class="bg-white w-11/12 max-w-md rounded-3xl p-8 shadow-2xl relative transform scale-95 transition-transform duration-300" id="payment-content">
+            <button onclick="closePaymentModal()" class="absolute top-6 right-6 text-gray-400 hover:text-gray-600 text-2xl">&times;</button>
+            <h2 class="text-2xl font-bold text-center mb-8 kawaii-font text-pink-400">✨ 选择支付方式</h2>
+            
+            <div class="space-y-4">
+                <div class="border-2 border-green-400 rounded-2xl p-4 flex items-center cursor-pointer hover:bg-green-50 transition" onclick="showQR('wechat')">
+                    <span class="text-3xl mr-4">💚</span>
+                    <div>
+                        <p class="font-bold">微信支付</p>
+                        <p class="text-xs text-gray-500">WeChat Pay</p>
+                    </div>
+                </div>
+                <div class="border-2 border-blue-400 rounded-2xl p-4 flex items-center cursor-pointer hover:bg-blue-50 transition" onclick="showQR('alipay')">
+                    <span class="text-3xl mr-4">💙</span>
+                    <div>
+                        <p class="font-bold">支付宝</p>
+                        <p class="text-xs text-gray-500">Alipay</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- QR Code Section (Hidden by default) -->
+            <div id="qr-section" class="mt-8 text-center hidden">
+                <div class="bg-gray-100 w-48 h-48 mx-auto rounded-2xl mb-4 flex items-center justify-center border-4 border-white shadow-inner">
+                    <!-- Placeholder QR code -->
+                    <div class="text-gray-400 text-sm px-4">
+                        <p id="qr-text">正在生成二维码...</p>
+                        <p class="text-xs mt-2">(此处接入收款码)</p>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600">应付总额：<span id="final-total" class="font-bold text-pink-500 text-lg">¥0.00</span></p>
+                <p class="text-xs text-gray-400 mt-4 italic">支付成功后请联系客服核对订单哦 ✨</p>
             </div>
         </div>
     </div>
@@ -224,6 +281,7 @@
 
     <script>
         let cart = JSON.parse(localStorage.getItem('youjia_cart')) || [];
+        let currentTotal = 0;
         
         function toggleCart() {
             const sidebar = document.getElementById('cart-sidebar');
@@ -296,6 +354,7 @@
                 `;
             }).join('');
             
+            currentTotal = total;
             totalElement.textContent = `¥${total.toFixed(2)}`;
         }
 
@@ -309,12 +368,41 @@
             }, 2000);
         }
 
-        function checkout() {
-            alert('结算功能正在开发中，很快就可以见面啦！ ✨');
+        // Payment Modal Functions
+        function showPaymentModal() {
+            toggleCart();
+            const modal = document.getElementById('payment-modal');
+            const content = document.getElementById('payment-content');
+            const finalTotal = document.getElementById('final-total');
+            
+            finalTotal.textContent = `¥${currentTotal.toFixed(2)}`;
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.add('opacity-100');
+                content.classList.remove('scale-95');
+            }, 10);
+            
+            // Reset QR section
+            document.getElementById('qr-section').classList.add('hidden');
+        }
+
+        function closePaymentModal() {
+            const modal = document.getElementById('payment-modal');
+            const content = document.getElementById('payment-content');
+            modal.classList.remove('opacity-100');
+            content.classList.add('scale-95');
+            setTimeout(() => modal.classList.add('hidden'), 300);
+        }
+
+        function showQR(type) {
+            const qrSection = document.getElementById('qr-section');
+            const qrText = document.getElementById('qr-text');
+            qrSection.classList.remove('hidden');
+            qrText.textContent = type === 'wechat' ? '正在调用微信支付码...' : '正在调用支付宝支付码...';
         }
 
         // Initialize UI on load
         updateUI();
     </script>
 </body>
-              </html>
+</html>
